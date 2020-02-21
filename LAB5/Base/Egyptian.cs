@@ -87,8 +87,6 @@ namespace LAB5.Base
 
                 if (value < 0)
                     throw new PersonArgumentException($"Unacceptable Hardcore lvl value for {Name}", value);
-                //Console.WriteLine("Hardcore with minus? Nonono");
-                //return;
 
                 _hardLvl = value;
             }

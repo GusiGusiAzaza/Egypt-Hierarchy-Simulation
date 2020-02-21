@@ -180,13 +180,11 @@ namespace LAB5.Base
                 Console.ResetColor();
 
                 return;
-                //return _people.Find(n => n.Name == name);
             }
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"(FindWithName)Person \'{name}\' not found(collection '{Name}')\n");
             Console.ResetColor();
-            //throw new PersonNotFoundException($"(FindWithName)Person \'{name}\' not found(collection '{Name}')");
         }
 
         public bool IsExist(string name)
@@ -274,15 +272,6 @@ namespace LAB5.Base
             _people = JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(path));
             Length = _people.Count;
         }
-
-        //public void MetadataSaveToJson(string path)
-        //{
-        //    File.Create(path).Close();
-        //    foreach (var p in _people)
-        //    {
-        //        File.AppendAllText(path, JsonConvert.SerializeObject(p.Metadata, Formatting.Indented));
-        //    }
-        //}
 
         public override string ToString()
         {
