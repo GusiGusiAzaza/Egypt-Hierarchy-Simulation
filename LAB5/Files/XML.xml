@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Soldier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Duties>
+    <string>Protect territories</string>
+    <string>Kill enemies</string>
+    <string>Conquering territories</string>
+    <string>Supervise the farmers and slaves</string>
+  </Duties>
+  <Intelligence>100</Intelligence>
+  <Metadata>
+    <NestedTypes />
+    <PublicFields />
+    <PrivateFields>
+      <string>Buf1</string>
+      <string>Buf2</string>
+      <string>MaxIntelligence</string>
+    </PrivateFields>
+    <PublicProperties>
+      <string>Name</string>
+      <string>Typee</string>
+      <string>Age</string>
+      <string>HardcoreLvl</string>
+      <string>AuthorityLvl</string>
+      <string>Money</string>
+    </PublicProperties>
+    <PrivateProperties />
+    <PublicMethods />
+    <PrivateMethods>
+      <string>Finalize</string>
+      <string>MemberwiseClone</string>
+    </PrivateMethods>
+  </Metadata>
+  <Name>Qen</Name>
+  <Typee>Soldier</Typee>
+  <Age>27</Age>
+  <HardcoreLvl>500</HardcoreLvl>
+  <AuthorityLvl>250</AuthorityLvl>
+  <Money>998</Money>
+  <SoldierSkills>75</SoldierSkills>
+</Soldier>

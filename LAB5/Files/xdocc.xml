@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<RootItem>
+  <Item id="1">
+    <Text>Text node</Text>
+    <Text>Another text node</Text>
+  </Item>
+  <Item id="2">
+    <Text>Only one text node</Text>
+  </Item>
+</RootItem>

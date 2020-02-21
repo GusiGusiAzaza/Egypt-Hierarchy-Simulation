@@ -1,0 +1,560 @@
+[
+  {
+    "Grain": 0,
+    "Livestock": 0,
+    "Duties": [
+      "Dig dirt",
+      "Graze animals"
+    ],
+    "Intelligence": 1,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.FarmerSlave",
+      "GUID": "1d8133bf-ae81-3d33-8d34-94eb3a0f03b5",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Pashedu",
+    "Typee": "Farmer",
+    "Age": 26,
+    "HardcoreLvl": 298,
+    "AuthorityLvl": 1,
+    "Money": 0
+  },
+  {
+    "Grain": 0,
+    "Livestock": 0,
+    "Duties": [
+      "Dig dirt",
+      "Graze animals"
+    ],
+    "Intelligence": 1,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.FarmerSlave",
+      "GUID": "1d8133bf-ae81-3d33-8d34-94eb3a0f03b5",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Nykara",
+    "Typee": "Farmer",
+    "Age": 30,
+    "HardcoreLvl": 264,
+    "AuthorityLvl": 1,
+    "Money": 0
+  },
+  {
+    "Resources": 1000,
+    "Things": 0,
+    "Duties": [
+      "Craft weapons",
+      "Craft tools",
+      "Sell crafted stuff",
+      "Making money"
+    ],
+    "Intelligence": 22,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.Craftsmen",
+      "GUID": "db88d056-c60e-3551-ba72-8fdaa574a89c",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Nikaure",
+    "Typee": "Craftsmen",
+    "Age": 26,
+    "HardcoreLvl": 100,
+    "AuthorityLvl": 32,
+    "Money": 35
+  },
+  {
+    "Resources": 1000,
+    "Things": 0,
+    "Duties": [
+      "Craft weapons",
+      "Craft tools",
+      "Sell crafted stuff",
+      "Making money"
+    ],
+    "Intelligence": 22,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.Craftsmen",
+      "GUID": "db88d056-c60e-3551-ba72-8fdaa574a89c",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Djedi",
+    "Typee": "Craftsmen",
+    "Age": 13,
+    "HardcoreLvl": 146,
+    "AuthorityLvl": 25,
+    "Money": 294
+  },
+  {
+    "StuffToSell": 0,
+    "Resources": 1000,
+    "Things": 0,
+    "Duties": [
+      "Exist",
+      "Sell stuff",
+      "Buy stuff",
+      "Making money"
+    ],
+    "Intelligence": 56,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.Merchant",
+      "GUID": "6985bb97-2eaf-351e-95cd-6e0b7bd4174b",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Hierarchy.Craftsmen",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Paser",
+    "Typee": "Merchant",
+    "Age": 10,
+    "HardcoreLvl": 95,
+    "AuthorityLvl": 78,
+    "Money": 433
+  },
+  {
+    "WriteReadSkills": 57,
+    "Duties": [
+      "Write on papyrus",
+      "Learn to read and write",
+      "Update databases(food, soldiers, gifts to the Gods, etc.)"
+    ],
+    "Intelligence": 500,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.Scribe",
+      "GUID": "7e5c9f3d-ab5f-3abd-8a3c-bbba88b7add5",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Pipi",
+    "Typee": "Scribe",
+    "Age": 20,
+    "HardcoreLvl": 40,
+    "AuthorityLvl": 200,
+    "Money": 953
+  },
+  {
+    "SoldierSkills": 56,
+    "Duties": [
+      "Protect territories",
+      "Kill enemies",
+      "Conquering territories",
+      "Supervise the farmers and slaves"
+    ],
+    "Intelligence": 100,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.Soldier",
+      "GUID": "8dee5bf1-21bf-374e-b76d-a9d5cab4bf1a",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Qen",
+    "Typee": "Soldier",
+    "Age": 16,
+    "HardcoreLvl": 500,
+    "AuthorityLvl": 250,
+    "Money": 775
+  },
+  {
+    "SoldierSkills": 50,
+    "Duties": [
+      "Protect territories",
+      "Kill enemies",
+      "Conquering territories",
+      "Supervise the farmers and slaves"
+    ],
+    "Intelligence": 100,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.Soldier",
+      "GUID": "8dee5bf1-21bf-374e-b76d-a9d5cab4bf1a",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Base.Egyptian",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Shoshenq",
+    "Typee": "Soldier",
+    "Age": 16,
+    "HardcoreLvl": 500,
+    "AuthorityLvl": 250,
+    "Money": 905
+  },
+  {
+    "Rules": 20,
+    "WriteReadSkills": 100,
+    "Duties": [
+      "Making laws",
+      "Keep peace in the society",
+      "Making rituals and ceremonies",
+      "Keep the Gods happy"
+    ],
+    "Intelligence": 400,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.PriestNoblesOfficials",
+      "GUID": "6dc59118-e40a-3c7d-b379-6f70272ceb10",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Hierarchy.Scribe",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Wennefer",
+    "Typee": "Priest",
+    "Age": 38,
+    "HardcoreLvl": 150,
+    "AuthorityLvl": 400,
+    "Money": 2248
+  },
+  {
+    "Rules": 17,
+    "WriteReadSkills": 100,
+    "Duties": [
+      "Making laws",
+      "Keep peace in the society",
+      "Making rituals and ceremonies",
+      "Keep the Gods happy"
+    ],
+    "Intelligence": 400,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.PriestNoblesOfficials",
+      "GUID": "6dc59118-e40a-3c7d-b379-6f70272ceb10",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Hierarchy.Scribe",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Siese",
+    "Typee": "Treasurer",
+    "Age": 33,
+    "HardcoreLvl": 150,
+    "AuthorityLvl": 400,
+    "Money": 2117
+  },
+  {
+    "Rules": 37,
+    "WriteReadSkills": 100,
+    "Duties": [
+      "Making laws",
+      "Keep peace in the society",
+      "Making rituals and ceremonies",
+      "Keep the Gods happy"
+    ],
+    "Intelligence": 400,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": false,
+      "Type": "LAB5.Hierarchy.PriestNoblesOfficials",
+      "GUID": "6dc59118-e40a-3c7d-b379-6f70272ceb10",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Hierarchy.Scribe",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Djedptahiufankh",
+    "Typee": "Prophet",
+    "Age": 33,
+    "HardcoreLvl": 150,
+    "AuthorityLvl": 400,
+    "Money": 1511
+  },
+  {
+    "Territories": 10000,
+    "Rules": 150,
+    "WriteReadSkills": 100,
+    "Duties": [
+      "Making and implementing rules and regulations",
+      "Rule the army",
+      "Protect provinces",
+      "Сollect taxes"
+    ],
+    "Intelligence": 3000,
+    "Metadata": {
+      "HasConstructor": true,
+      "IsNested": false,
+      "IsSealed": true,
+      "Type": "LAB5.Hierarchy.Pharaoh",
+      "GUID": "76b11818-c836-3b7c-9acb-d36e89f4ee4f",
+      "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "BaseType": "LAB5.Hierarchy.PriestNoblesOfficials",
+      "NestedTypes": [],
+      "PublicFields": [],
+      "PrivateFields": [
+        "Buf1",
+        "Buf2",
+        "MaxIntelligence"
+      ],
+      "PublicProperties": [
+        "Name",
+        "Typee",
+        "Age",
+        "HardcoreLvl",
+        "AuthorityLvl",
+        "Money"
+      ],
+      "PrivateProperties": [],
+      "PublicMethods": [],
+      "PrivateMethods": [
+        "Finalize",
+        "MemberwiseClone"
+      ]
+    },
+    "Name": "Tutankhamun",
+    "Typee": "Pharaoh",
+    "Age": 24,
+    "HardcoreLvl": 1000,
+    "AuthorityLvl": 1000,
+    "Money": 100000
+  }
+]
