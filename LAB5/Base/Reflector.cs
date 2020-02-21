@@ -30,12 +30,9 @@ namespace LAB5.Base
 
         public static object Invoke(object obj, string method, bool createObj, params string[] parms)
         {
-            if (createObj)
-            {
-                return Invoke((Type)obj, method, parms);
-            }
+            if (createObj) return Invoke((Type) obj, method, parms);
 
-            MethodInfo toInvoke = obj.GetType().GetMethod(method);
+            var toInvoke = obj.GetType().GetMethod(method);
             if (toInvoke != null) toInvoke.Invoke(obj, parms);
             else throw new EgyptException($"Method not found ({method})");
             return default;
@@ -50,11 +47,10 @@ namespace LAB5.Base
 
         public static object Invoke(string type, string method, params string[] methodparms)
         {
-            var instance = Invoke(Type.GetType(type),method, methodparms);
+            var instance = Invoke(Type.GetType(type), method, methodparms);
             Invoke(instance, method, false, methodparms);
             return instance;
         }
-
 
 
         public static void PrintMetadata(ReflectionMetadata metadata)

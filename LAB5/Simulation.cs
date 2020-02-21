@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Net.Sockets;
-using System.Xml;
 using System.Xml.Linq;
 using LAB5.Base;
 using LAB5.Exception_Classes;
@@ -23,9 +21,9 @@ namespace LAB5
                 var xmlPath = Directory.GetParent(workingDirectory).Parent?.FullName + @"\Files\XML.xml";
                 var xdocPath = Directory.GetParent(workingDirectory).Parent?.FullName + @"\Files\xdoc.xml";
                 var xdoccPath = Directory.GetParent(workingDirectory).Parent?.FullName + @"\Files\xdocc.xml";
+                var metadataPath = Directory.GetParent(workingDirectory).Parent?.FullName + @"\Files\Metadata.txt";
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Starting simulation...\n");
-                //var nile = new Village("Nile River");
                 var f1 = new FarmerSlave("Pashedu", "Farmer");
                 var f2 = new FarmerSlave("Nykara", "Farmer");
                 var c1 = new Craftsmen("Nikaure", "Craftsmen");
@@ -43,12 +41,87 @@ namespace LAB5
                 var coll2 = new Egypt<Egyptian>("2Egypt2", pharaoh);
                 var coll = coll1 + coll2;
 
+                foreach (Egyptian p in coll)
+                {
+                    p.Work();
+                    p.Work();
+                }
+
+                f1.SellStuff();
+                c1.SellStuff();
+                m1.SellStuff();
+                f2.SellLiveStock();
+                f2.SellLiveStock();
+                c2.BuyResources(3);
+                c2.BuyResources(300);
+                m1.BuyResources(1);
+
+                //coll.DetailPrint();
+                coll.Print();
+                coll.FindWithName("Siese");
+
+                Console.WriteLine("\nReturned with predicate");
+                Console.WriteLine(coll.FirstOrDefault(n => n.Money > 50000) + "\n");
+                var rich = new Egypt<Egyptian>("RIchness", coll.FindAll(n => n.Money < 1000).ToArray());
+                //rich.DetailPrint();
+
+                coll.Kill(scr1);
+                coll.FindWithName("Pipi");
+                coll.Kill(pharaoh);
+                coll.FindWithName("Tutankhamun");
+                //coll.DetailPrint();
+                Console.WriteLine(c2.GetHashCode());
+                Console.WriteLine(pharaoh.GetHashCode());
+                Console.WriteLine(pr2.GetHashCode());
+
+                coll.JsonSaveToFile(jsonPath);
+                var coll3 = new Egypt<Egyptian>("JSON Egypt", jsonPath);
+                coll3.JsonReadFromFile(jsonPath);
+                coll3.Print();
+                coll.FindWithName("GL HF");
+                coll.Kill(coll[5]);
+                coll2 -= coll;
+                coll2.Print();
+                var coll6 = new Egypt<Egyptian>("Egypt 3.0", jsonPath);
+                coll6.Print();
+
+                //coll.MetadataSaveToJson(metadataPath);
+
+                ////!Exception generator!////
+
+                //coll3[111].Work();
+                //pharaoh.Age = 110;
+                //pharaoh.Name = "a";
+                //pharaoh.HardcoreLvl = -2;
+                //const string errpath1 = @"H:\PROA\LB5,6,7\LB5\Egypt.bin";
+                //const string errpath2 = @"H:\PRGA\LB5,6,7\LB5\Egypt.bin";
+                //const string errpath3 = @"H:\3SEM\PROGA\\LB5\Egpt.bin";
+                //CheckPathValidity(errpath1, errpath2, errpath3);
+
+                ////!Exception generator!////
+
+                //REFLECTION//
+                var metadata = new Reflector.ReflectionMetadata(typeof(Egypt<>));
+                Reflector.PrintMetadata(metadata);
+                Console.ForegroundColor = ConsoleColor.White;
+                //Reflector.PrintMetadata(pharaoh.Metadata);
+                Reflector.Analyze(metadata, metadataPath);
+                object[] parms = {"Tuta", "Pharaoh"};
+                var obj = Reflector.Create("LAB5.Hierarchy.Pharaoh", parms);
+                Console.WriteLine(obj);
+                Reflector.Invoke(obj, "Work", false);
+                Console.WriteLine(obj);
+                var obj2 = Reflector.Invoke(typeof(Pharaoh), "Work", true);
+                Console.WriteLine(obj2);
+                Console.ForegroundColor = ConsoleColor.White;
+
+                //SERIALIZATION
                 CustomSerializer.BinSerialize(coll, binPath);
                 var coll51 = CustomSerializer.BinDeserialize(binPath);
                 Console.WriteLine(coll51);
 
-                CustomSerializer.NewtonsoftSerialize(coll,nsPath);
-                var p1 = CustomSerializer.NewtonsoftDeserialize<Egypt<Egyptian>>(nsPath);
+                CustomSerializer.NewtonsoftSerialize(scr1, nsPath);
+                var p1 = CustomSerializer.NewtonsoftDeserialize<Egyptian>(nsPath);
                 Console.WriteLine(p1);
 
                 CustomSerializer.JsonSerialize(pr3, jsonPath);
@@ -65,22 +138,19 @@ namespace LAB5
                     where dialog.Attribute("weight") != null
                     select dialog;
 
-                foreach (var xElement in ids)
-                {
-                    Console.WriteLine(xElement + "\n");
-                }
+                foreach (var xElement in ids) Console.WriteLine(xElement + "\n");
 
                 var xdocc = new XDocument(
                     new XDeclaration("1.0", "windows-1251", "yes"),
                     new XElement("RootItem",
-                        new XElement("Item", 
+                        new XElement("Item",
                             new XElement("Text", "Text node"),
                             new XElement("Text", "Another text node"),
                             new XAttribute("id", "1")),
                         new XElement("Item",
                             new XElement("Text", "Only one text node"),
                             new XAttribute("id", "2")))
-                    );
+                );
 
                 xdocc.Save(xdoccPath);
             }

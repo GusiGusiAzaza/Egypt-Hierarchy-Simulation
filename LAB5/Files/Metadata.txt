@@ -1,0 +1,42 @@
+{
+  "HasConstructor": true,
+  "IsNested": false,
+  "IsSealed": true,
+  "Type": "LAB5.Base.Egypt`1[T]",
+  "GUID": "2465b4b7-9892-3973-a79b-a410600c6738",
+  "Assembly": "LAB5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "BaseType": "System.Object",
+  "NestedTypes": [
+    "CreationInfo",
+    "<>c__DisplayClass27_0",
+    "<>c__DisplayClass28_0",
+    "<>c"
+  ],
+  "PublicFields": [],
+  "PrivateFields": [
+    "_time",
+    "_isSorted",
+    "_people",
+    "_position",
+    "<Name>k__BackingField",
+    "<Length>k__BackingField"
+  ],
+  "PublicProperties": [
+    "Name",
+    "Item",
+    "Length"
+  ],
+  "PrivateProperties": [
+    "System.Collections.IEnumerator.Current"
+  ],
+  "PublicMethods": [],
+  "PrivateMethods": [
+    "set_Length",
+    "System.Collections.IEnumerator.get_Current",
+    "System.Collections.IEnumerable.GetEnumerator",
+    "System.Collections.IEnumerator.MoveNext",
+    "System.Collections.IEnumerator.Reset",
+    "Finalize",
+    "MemberwiseClone"
+  ]
+}

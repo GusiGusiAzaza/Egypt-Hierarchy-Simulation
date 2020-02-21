@@ -103,8 +103,9 @@ namespace LAB5.Base
                 case CreationMode.Exists:
                 {
                     if (File.Exists(path))
-                        throw new DirectoryNotFoundException($"CreateFile(mode Exists): \'{Path.Combine(directory, filename)}\' already exists");
-                    
+                        throw new DirectoryNotFoundException(
+                            $"CreateFile(mode Exists): \'{Path.Combine(directory, filename)}\' already exists");
+
                     goto case CreationMode.Create;
                 }
                 default:

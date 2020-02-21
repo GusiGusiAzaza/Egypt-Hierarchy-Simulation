@@ -6,7 +6,7 @@
     <string>Conquering territories</string>
     <string>Supervise the farmers and slaves</string>
   </Duties>
-  <Intelligence>100</Intelligence>
+  <Intelligence>150</Intelligence>
   <Metadata>
     <NestedTypes />
     <PublicFields />
@@ -32,9 +32,9 @@
   </Metadata>
   <Name>Qen</Name>
   <Typee>Soldier</Typee>
-  <Age>27</Age>
+  <Age>17</Age>
   <HardcoreLvl>500</HardcoreLvl>
-  <AuthorityLvl>250</AuthorityLvl>
-  <Money>998</Money>
-  <SoldierSkills>75</SoldierSkills>
+  <AuthorityLvl>260</AuthorityLvl>
+  <Money>984</Money>
+  <SoldierSkills>71</SoldierSkills>
 </Soldier>

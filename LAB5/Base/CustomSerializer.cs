@@ -1,11 +1,10 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using LAB5.Exception_Classes;
-using Newtonsoft.Json;
 using System.Text.Json;
 using System.Xml.Serialization;
-using Formatting = Newtonsoft.Json.Formatting;
+using LAB5.Exception_Classes;
+using Newtonsoft.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace LAB5.Base
@@ -86,6 +85,5 @@ namespace LAB5.Base
                 throw new EgyptDirectoryNotFoundException("File directory not found", invalidpaths);
             return true;
         }
-
     }
 }

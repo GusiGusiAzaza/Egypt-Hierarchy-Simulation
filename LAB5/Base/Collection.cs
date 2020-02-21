@@ -17,8 +17,8 @@ namespace LAB5.Base
         private bool _isSorted;
         private List<T> _people = new List<T>();
         private int _position = -1;
-        [NonSerialized]
-        public Reflector.ReflectionMetadata Metadata;
+
+        [NonSerialized] public Reflector.ReflectionMetadata Metadata;
 
         //// Singleton
         //private static Egypt<T> _instance;
@@ -41,7 +41,7 @@ namespace LAB5.Base
         //    return _instance;
         //}
         //// Singleton end
-        
+
         public Egypt()
         {
             _time = new CreationInfo(DateTime.Now);

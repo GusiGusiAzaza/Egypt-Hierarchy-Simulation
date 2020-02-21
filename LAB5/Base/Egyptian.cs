@@ -111,7 +111,7 @@ namespace LAB5.Base
         {
             var str = "";
             foreach (var d in Duties) str += $"{d}, ";
-            
+
             return str;
         }
 
